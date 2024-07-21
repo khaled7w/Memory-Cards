@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Cards</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/72cc71c3b7.js"
+      crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-section">
+        <h2>Memory Cards</h2>
+        <button id="add-new-card" class="add-card">+ Add New Card</button>
+      </div>
+      <div class="card-section hide"></div>
+      <div class="arrows">
+        <i class="fa-solid fa-arrow-left icon1" id="left"></i>
+        <p class="counter"></p>
+        <i class="fa-solid fa-arrow-right icon2"></i>
+      </div>
+    </div>
+    <form class="add-card-section">
+      <label for="question">Question</label>
+      <input type="text" id="question" placeholder="Enter Question..." />
+      <label for="answer">Answer</label>
+      <input type="text" id="answer" placeholder="Enter Anwser" />
+      <input type="submit" value="+ Add Card" class="add-card" id="add-card" />
+    </form>
+    <button id="clear-cards" class="clear-cards">
+      <i class="fa-solid fa-trash"></i> Clear Cards
+    </button>
+  </body>
+</html>
